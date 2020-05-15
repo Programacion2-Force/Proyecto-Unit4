@@ -14,7 +14,7 @@
                 <td class="auto-style3"><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox></td>
             </tr>
             <tr>
-                <td class="auto-style4">Ingre su Apellido:</td>
+                <td class="auto-style4">Ingrese su Apellido:</td>
                 <td class="auto-style3"><asp:TextBox ID="TextBox2" runat="server"></asp:TextBox></td>
                 
             </tr>
