@@ -33,6 +33,7 @@ namespace Restaurante
             try
             {
                 objUser.InsertarUsuario(nombre, apellido, username, pass, email);
+                Response.Redirect("Login.aspx");
             }
             catch
             {

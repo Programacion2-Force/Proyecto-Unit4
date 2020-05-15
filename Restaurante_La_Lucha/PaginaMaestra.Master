@@ -23,7 +23,7 @@
     <nav id="menu">
         <ul class="links">
             <li><a href="index.aspx">Inicio</a></li>
-            <li><a href="#">Registrarse</a></li>
+            <li><a href="Registro.aspx">Registrarse</a></li>
             <li><a href="ListaProductos.aspx">Realizar un Pedido</a></li>
             <li><a href="#">Sobre Nosotros</a></li>
             <li><a href="#">Contactenos</a></li>

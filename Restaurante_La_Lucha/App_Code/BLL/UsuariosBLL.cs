@@ -41,6 +41,19 @@ namespace Restaurante
             return objUser;
         }
 
+        public bool UserLog(string username, string pass)
+        {
+            App_Code.DAL.UsuariosDSTableAdapters.USUARIOSTableAdapter adaptador = new App_Code.DAL.UsuariosDSTableAdapters.USUARIOSTableAdapter();
+            App_Code.DAL.UsuariosDS.USUARIOSDataTable tabla = adaptador.UserLogin(username, pass);
+            if (tabla.Rows.Count > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
         public static UsuariosDTO MostrarUsuariosID(string cod_user)
         {
             App_Code.DAL.UsuariosDSTableAdapters.USUARIOSTableAdapter adaptador = new App_Code.DAL.UsuariosDSTableAdapters.USUARIOSTableAdapter();
