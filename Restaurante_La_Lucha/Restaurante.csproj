@@ -113,6 +113,8 @@
     <Content Include="assets\js\ai.0.22.9-build00167.min.js" />
     <Content Include="assets\js\bootstrap.js" />
     <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="F_NPedido.aspx" />
+    <Content Include="F_Reservas.aspx" />
     <Content Include="WebForm1.aspx" />
     <None Include="assets\js\jquery-1.10.2.intellisense.js" />
     <Content Include="assets\js\jquery-1.10.2.js" />
@@ -138,12 +140,25 @@
     <Content Include="MostrarProductos.aspx" />
     <Content Include="MovimientoProductos.aspx" />
     <Content Include="Registro.aspx" />
-    <Content Include="Reservas.aspx" />
     <Content Include="TransaccionDePago.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Code\BLL\UsuariosBLL.cs" />
+    <Compile Include="F_NPedido.aspx.cs">
+      <DependentUpon>F_NPedido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="F_NPedido.aspx.designer.cs">
+      <DependentUpon>F_NPedido.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="F_Reservas.aspx.cs">
+      <DependentUpon>F_Reservas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="F_Reservas.aspx.designer.cs">
+      <DependentUpon>F_Reservas.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -188,13 +203,6 @@
     </Compile>
     <Compile Include="Registro.aspx.designer.cs">
       <DependentUpon>Registro.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Reservas.aspx.cs">
-      <DependentUpon>Reservas.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Reservas.aspx.designer.cs">
-      <DependentUpon>Reservas.aspx</DependentUpon>
     </Compile>
     <Compile Include="TransaccionDePago.aspx.cs">
       <DependentUpon>TransaccionDePago.aspx</DependentUpon>
