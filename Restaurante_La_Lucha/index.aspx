@@ -2,6 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <br /><br /><div><a href="Login.aspx">Iniciar Sesi&oacute;n</a>  |  <a href="Registro.aspx">Registrarse</a></div>
     <section class="banner full">
         <article>
             <img src="assets/images/slide01.jpg" alt="" />
