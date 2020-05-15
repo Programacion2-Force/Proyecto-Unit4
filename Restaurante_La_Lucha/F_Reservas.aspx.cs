@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace Restaurante
 {
-    public partial class F_Reservas : System.Web.UI.Page
-    {
-        protected void Page_Load(object sender, EventArgs e)
-        {
+	public partial class F_Reservas : System.Web.UI.Page
+	{
+		protected void Page_Load(object sender, EventArgs e)
+		{
 
-        }
-    }
+		}
+	}
 }
