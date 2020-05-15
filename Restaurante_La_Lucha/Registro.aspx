@@ -19,4 +19,7 @@
     <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="TextBox5" ErrorMessage="Proporcione su Email"></asp:RequiredFieldValidator>
     <br />
     <asp:Button ID="Button1" runat="server" Text="Registrarme" OnClick="Button1_Click" />
+    <br />
+    <a href="Login.aspx">Ya tengo una cuenta</a>
+
 </asp:Content>

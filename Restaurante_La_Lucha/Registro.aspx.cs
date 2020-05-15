@@ -15,7 +15,13 @@ namespace Restaurante
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["Usuario"] != null)
+            {
+                Response.Redirect("index.aspx");
+            }
+            else
+            {
+            }
         }
 
         protected void Button1_Click(object sender, EventArgs e)

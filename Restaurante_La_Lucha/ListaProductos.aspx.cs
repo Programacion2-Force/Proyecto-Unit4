@@ -13,13 +13,21 @@ namespace Restaurante
         int cantidad;
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!Page.IsPostBack)
+            if (Session["Usuario"] != null)
             {
-                cantidad = 0;
+                Label2.Text = Session["Usuario"].ToString();
+                if (!Page.IsPostBack)
+                {
+                    cantidad = 0;
+                }
+                else
+                {
+                    cantidad = Convert.ToInt32(Label1.Text);
+                }
             }
             else
             {
-                cantidad = Convert.ToInt32(Label1.Text);
+                Response.Redirect("index.aspx");
             }
         }
 

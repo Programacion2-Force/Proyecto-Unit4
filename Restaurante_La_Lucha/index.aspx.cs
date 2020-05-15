@@ -11,7 +11,24 @@ namespace Restaurante
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string user;
+            if (Session["Usuario"] != null)
+            {
+                user = Session["Usuario"].ToString();
+                Label1.Text = user;
+                Button1.Visible = false;
+            }
+            else
+            {
+                Label1.Text = "";
+                Button1.Visible = true;
+            }
+        }
 
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+
+            Response.Redirect("Login.aspx");
         }
     }
 }
