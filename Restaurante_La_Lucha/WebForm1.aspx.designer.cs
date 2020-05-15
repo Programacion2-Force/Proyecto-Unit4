@@ -10,7 +10,7 @@
 namespace Restaurante {
     
     
-    public partial class Reservas {
+    public partial class WebForm1 {
         
         /// <summary>
         /// Control form1.
