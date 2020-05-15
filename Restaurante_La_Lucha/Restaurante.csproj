@@ -113,9 +113,6 @@
     <Content Include="assets\js\ai.0.22.9-build00167.min.js" />
     <Content Include="assets\js\bootstrap.js" />
     <Content Include="assets\js\bootstrap.min.js" />
-    <Content Include="F_NPedido.aspx" />
-    <Content Include="F_Reservas.aspx" />
-    <Content Include="WebForm1.aspx" />
     <None Include="assets\js\jquery-1.10.2.intellisense.js" />
     <Content Include="assets\js\jquery-1.10.2.js" />
     <Content Include="assets\js\jquery-1.10.2.min.js" />
@@ -134,38 +131,19 @@
     <Content Include="assets\js\util.js" />
     <None Include="assets\js\_references.js" />
     <Content Include="CierreSesion.aspx" />
+    <Content Include="Detalle.aspx" />
     <Content Include="index.aspx" />
     <Content Include="ListaProductos.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="MostrarProductos.aspx" />
     <Content Include="MovimientoProductos.aspx" />
     <Content Include="Registro.aspx" />
+    <Content Include="Reservas.aspx" />
     <Content Include="TransaccionDePago.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Code\BLL\UsuariosBLL.cs" />
-    <Compile Include="F_NPedido.aspx.cs">
-      <DependentUpon>F_NPedido.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="F_NPedido.aspx.designer.cs">
-      <DependentUpon>F_NPedido.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="F_Reservas.aspx.cs">
-      <DependentUpon>F_Reservas.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="F_Reservas.aspx.designer.cs">
-      <DependentUpon>F_Reservas.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-    </Compile>
     <Content Include="App_Code\DAL\ProductosDS.cs">
       <DependentUpon>ProductosDS.xsd</DependentUpon>
     </Content>
@@ -183,6 +161,12 @@
     </Compile>
     <Compile Include="CierreSesion.aspx.designer.cs">
       <DependentUpon>CierreSesion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Detalle.aspx.cs">
+      <DependentUpon>Detalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Detalle.aspx.designer.cs">
+      <DependentUpon>Detalle.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -203,6 +187,12 @@
     </Compile>
     <Compile Include="Registro.aspx.designer.cs">
       <DependentUpon>Registro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reservas.aspx.cs">
+      <DependentUpon>Reservas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reservas.aspx.designer.cs">
+      <DependentUpon>Reservas.aspx</DependentUpon>
     </Compile>
     <Compile Include="TransaccionDePago.aspx.cs">
       <DependentUpon>TransaccionDePago.aspx</DependentUpon>

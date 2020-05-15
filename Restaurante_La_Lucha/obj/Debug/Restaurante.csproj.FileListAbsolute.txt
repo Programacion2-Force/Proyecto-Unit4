@@ -139,3 +139,6 @@ C:\Users\DELL\Documents\GitHub\Proyecto-Unit4\Restaurante_La_Lucha\obj\Debug\Res
 C:\Users\DELL\Documents\GitHub\Proyecto-Unit4\Restaurante_La_Lucha\obj\Debug\Restaurante.csproj.CopyComplete
 C:\Users\DELL\Documents\GitHub\Proyecto-Unit4\Restaurante_La_Lucha\obj\Debug\Restaurante.dll
 C:\Users\DELL\Documents\GitHub\Proyecto-Unit4\Restaurante_La_Lucha\obj\Debug\Restaurante.pdb
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Restaurante_La_Lucha\obj\Debug\Restaurante.csprojResolveAssemblyReference.cache
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Restaurante_La_Lucha\obj\Debug\Restaurante.dll
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Restaurante_La_Lucha\obj\Debug\Restaurante.pdb
