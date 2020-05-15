@@ -131,7 +131,6 @@
     <Content Include="assets\js\util.js" />
     <None Include="assets\js\_references.js" />
     <Content Include="CierreSesion.aspx" />
-    <Content Include="Detalle.aspx" />
     <Content Include="index.aspx" />
     <Content Include="ListaProductos.aspx" />
     <Content Include="Login.aspx" />
@@ -161,12 +160,6 @@
     </Compile>
     <Compile Include="CierreSesion.aspx.designer.cs">
       <DependentUpon>CierreSesion.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Detalle.aspx.cs">
-      <DependentUpon>Detalle.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Detalle.aspx.designer.cs">
-      <DependentUpon>Detalle.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
