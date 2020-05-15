@@ -137,6 +137,7 @@
     <Content Include="MostrarProductos.aspx" />
     <Content Include="MovimientoProductos.aspx" />
     <Content Include="Registro.aspx" />
+    <Content Include="Reservas.aspx" />
     <Content Include="TransaccionDePago.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -179,6 +180,13 @@
     </Compile>
     <Compile Include="Registro.aspx.designer.cs">
       <DependentUpon>Registro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reservas.aspx.cs">
+      <DependentUpon>Reservas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reservas.aspx.designer.cs">
+      <DependentUpon>Reservas.aspx</DependentUpon>
     </Compile>
     <Compile Include="TransaccionDePago.aspx.cs">
       <DependentUpon>TransaccionDePago.aspx</DependentUpon>
