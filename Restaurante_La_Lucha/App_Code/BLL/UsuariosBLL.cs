@@ -41,11 +41,20 @@ namespace Restaurante
             return objUser;
         }
 
+        private static string UsuarioActivo(App_Code.DAL.UsuariosDS.USUARIOSRow filas)
+        {
+            string usActivo;
+            usActivo = filas.username;
+
+
+            return usActivo;
+        }
+
         public bool UserLog(string username, string pass)
         {
             App_Code.DAL.UsuariosDSTableAdapters.USUARIOSTableAdapter adaptador = new App_Code.DAL.UsuariosDSTableAdapters.USUARIOSTableAdapter();
             App_Code.DAL.UsuariosDS.USUARIOSDataTable tabla = adaptador.UserLogin(username, pass);
-            if (tabla.Rows.Count > 0)
+            if (tabla.Rows.Count > 0 && username.Equals(UsuarioActivo(tabla[0]).ToString()))
             {
                 return true;
             }

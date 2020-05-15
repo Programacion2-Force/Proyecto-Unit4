@@ -130,6 +130,7 @@
     <Content Include="assets\js\skel.min.js" />
     <Content Include="assets\js\util.js" />
     <None Include="assets\js\_references.js" />
+    <Content Include="CierreSesion.aspx" />
     <Content Include="index.aspx" />
     <Content Include="ListaProductos.aspx" />
     <Content Include="Login.aspx" />
@@ -152,6 +153,13 @@
     </Compile>
     <Compile Include="App_Code\Encriptar1.cs" />
     <Compile Include="App_Code\DTO\ClsProductos.cs" />
+    <Compile Include="CierreSesion.aspx.cs">
+      <DependentUpon>CierreSesion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CierreSesion.aspx.designer.cs">
+      <DependentUpon>CierreSesion.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

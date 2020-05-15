@@ -27,7 +27,7 @@
             <li><a href="ListaProductos.aspx">Realizar un Pedido</a></li>
             <li><a href="#">Sobre Nosotros</a></li>
             <li><a href="#">Contactenos</a></li>
-            <li><a href="#">Cerrar Sesion</a></li>
+            <li><a href="CierreSesion.aspx">Cerrar Sesion</a></li>
 
         </ul>
     </nav>

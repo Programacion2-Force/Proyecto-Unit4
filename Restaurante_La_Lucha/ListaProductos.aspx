@@ -11,6 +11,7 @@
         <div style="display:scroll; position:fixed; top:50px; right:0px; text-align:center;">
             <img width="200px" height="200px" src="assets/images/car_orden.png" /><br />
             <asp:Label ID="Label1" runat="server" Text="0" Font-Bold="True" Font-Size="XX-Large" ForeColor="#000099"></asp:Label>
+            <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
         </div>
         <table class="table">
             <tr>

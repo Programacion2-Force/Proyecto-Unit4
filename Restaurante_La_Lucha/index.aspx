@@ -3,11 +3,12 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <br /><br />
-    <div>
+
         <asp:Panel ID="Panel1" runat="server" BackColor="Black">
-            <asp:Button ID="Button1" runat="server" Text="Iniciar Sesión" BackColor="Gray" Color="White" Font-Size="XX-Small" /><asp:Button ID="Button2" runat="server" Text="Registrarse" BackColor="Gray" Color="White" Font-Size="XX-Small" />
+            <asp:Button ID="Button1" runat="server" Text="Iniciar Sesión" BackColor="Gray" Color="White" OnClick="Button1_Click" />
+            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
         </asp:Panel>
-    </div>
+
     <section class="banner full">
         <article>
             <img src="assets/images/slide01.jpg" alt="" />
