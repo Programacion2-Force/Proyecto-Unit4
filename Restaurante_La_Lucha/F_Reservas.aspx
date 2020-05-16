@@ -20,6 +20,7 @@
             </tr>
         </table>
         <br />
+<<<<<<< HEAD
         Reserve su Mesa<asp:DropDownList ID="DropDownList1" runat="server">
             <asp:ListItem>Mesa 1</asp:ListItem>
             <asp:ListItem>Mesa 2</asp:ListItem>
@@ -36,5 +37,10 @@
         <br />
         <br />
         <br />
+=======
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="Button1" runat="server" Text="Reservar" />
+        <br /><br />
+>>>>>>> 5294041af244395ff4299dbcdb6743761412a09f
     </div>
 </asp:Content>

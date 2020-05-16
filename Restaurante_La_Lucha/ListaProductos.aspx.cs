@@ -10,15 +10,17 @@ namespace Restaurante
 {
     public partial class ListaProductos : System.Web.UI.Page
     {
-        int cantidad;
+        public int cantidad;
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["Usuario"] != null)
             {
                 Label2.Text = Session["Usuario"].ToString();
+                Label3.Text = Label2.Text;
                 if (!Page.IsPostBack)
                 {
                     cantidad = 0;
+
                 }
                 else
                 {

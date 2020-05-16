@@ -5,7 +5,8 @@
     <br />
     <br />
     <div class="col-xs-12 col-sm-9">
-        <h2>Bienvenido cliente </h2>
+        <h2>Bienvenido cliente <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label></h2>
+        
         @* Hamburguesas*@
         <a name="tabla1"></a>
         <div style="display:scroll; position:fixed; top:50px; right:0px; text-align:center;">
@@ -22,7 +23,7 @@
            <%
                ProductosDSTableAdapters.ProductoTableAdapter adaptador = new ProductosDSTableAdapters.ProductoTableAdapter();
                ProductosDS.ProductoDataTable tabla = adaptador.MostrarProductos();
-
+               
                foreach (ProductosDS.ProductoRow filas in tabla)
                {
                    if (filas.IdTipoProducto == 1)
@@ -40,7 +41,6 @@
                     <p> Descripcion: <b><%Response.Write(filas.Descripcion); %></b></p>
                     <p> Precio:      <b>$ <%Response.Write(filas.Precio); %></b></p>
                     <asp:Button ID="Button1" runat="server" Text="Agregar" class="btn btn-default" OnClick="Button1_Click"/>
-                    
 
                 </td>
                 <td>
@@ -81,7 +81,6 @@
                     <p> Descripcion: <b><%Response.Write(filas.Descripcion); %></b></p>
                     <p> Precio:      <b>$ <%Response.Write(filas.Precio); %></b></p>
                     <asp:Button ID="Button2" runat="server" Text="Agregar" class="btn btn-default" OnClick="Button2_Click"/>
-                    
 
                 </td>
                 <td>
@@ -121,7 +120,6 @@
                     <p> Descripcion: <b><%Response.Write(filas.Descripcion); %></b></p>
                     <p> Precio:      <b>$ <%Response.Write(filas.Precio); %></b></p>
                     <asp:Button ID="Button3" runat="server" Text="Agregar" class="btn btn-default" OnClick="Button3_Click"/>
-                    
 
                 </td>
                 <td>
