@@ -1881,7 +1881,10 @@ body {
 	input[type="button"],
 	button,
 	.button {
-		-moz-appearance: none;
+		border-style: none;
+    border-color: inherit;
+    border-width: 0;
+    -moz-appearance: none;
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
@@ -1890,13 +1893,11 @@ body {
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		border-radius: 2px;
-		border: 0;
 		cursor: pointer;
 		display: inline-block;
 		font-weight: 300;
-		height: 2.85rem;
+		height: 20px;
 		line-height: 2.95rem;
-		padding: 0 1.5rem;
 		text-align: center;
 		text-decoration: none;
 		text-transform: uppercase;
@@ -1981,7 +1982,11 @@ body {
 	.button {
 		background-color: darkorange;
 		color: #000 !important;
-	}
+    top: 438px;
+    left: 154px;
+    position: absolute;
+    width: 113px;
+}
 
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
@@ -2076,19 +2081,19 @@ body {
 	input[type="email"],
 	select,
 	textarea {
-		-moz-appearance: none;
+		border-style: solid;
+    border-color: inherit;
+    border-width: 1px;
+    -moz-appearance: none;
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
 		border-radius: 2px;
-		border: none;
-		border: solid 1px;
 		color: inherit;
 		display: block;
 		outline: 0;
-		padding: 0 1rem;
 		text-decoration: none;
-		width: 100%;
+		width: 12%;
 	}
 
 		input[type="text"]:invalid,
@@ -2135,7 +2140,7 @@ body {
 	input[type="password"],
 	input[type="email"],
 	select {
-		height: 2.75rem;
+		height: 16px;
 	}
 
 	textarea {
@@ -2235,9 +2240,11 @@ body {
 	input[type="email"],
 	select,
 	textarea {
-		background: rgba(144, 144, 144, 0.075);
-		border-color: rgba(144, 144, 144, 0.25);
-	}
+		top: 338px;
+    left: 70px;
+    position: absolute;
+    margin-bottom: 4px;
+}
 
 		input[type="text"]:focus,
 		input[type="password"]:focus,
