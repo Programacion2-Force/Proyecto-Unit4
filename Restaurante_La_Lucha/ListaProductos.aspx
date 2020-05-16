@@ -5,15 +5,13 @@
     <br />
     <br />
     <div class="col-xs-12 col-sm-9">
-        <h2>Bienvenido cliente <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label></h2>
-        
+        <h2>Bienvenido cliente </h2>
         @* Hamburguesas*@
         <a name="tabla1"></a>
         <div style="display:scroll; position:fixed; top:50px; right:0px; text-align:center;">
             <img width="200px" height="200px" src="assets/images/car_orden.png" /><br />
             <asp:Label ID="Label1" runat="server" Text="0" Font-Bold="True" Font-Size="XX-Large" ForeColor="#000099"></asp:Label>
             <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
-            <asp:Label ID="Label10" runat="server" Text="0.00"></asp:Label>
         </div>
         <table class="table">
             <tr>
@@ -24,7 +22,7 @@
            <%
                ProductosDSTableAdapters.ProductoTableAdapter adaptador = new ProductosDSTableAdapters.ProductoTableAdapter();
                ProductosDS.ProductoDataTable tabla = adaptador.MostrarProductos();
-               
+
                foreach (ProductosDS.ProductoRow filas in tabla)
                {
                    if (filas.IdTipoProducto == 1)
@@ -40,13 +38,10 @@
                     <input type="hidden" id="ncontador" name="ncontador" value="">
                     <h5>Nombre:      <b><%Response.Write(filas.Nombre); %></b></h5>
                     <p> Descripcion: <b><%Response.Write(filas.Descripcion); %></b></p>
-                    <p> Precio:      <b>$ <%Response.Write(filas.Precio); %></b></p><% precio = Convert.ToDouble(filas.Precio); %>
-                    <asp:Button ID="Button1" runat="server" Text="Agregar" CommandName='<%# Eval(precio.ToString()) %>' class="btn btn-default" OnClick="Button1_Click"/>
-                    <asp:Label ID="Label4" runat="server" Text="Label" Visible="false"></asp:Label>
-                    <asp:Label ID="Label5" runat="server" Text="Label" Visible="false"></asp:Label>
-                    <%Label4.Text = filas.Nombre;
-                      Label5.Text = filas.Precio.ToString();
-                        %>
+                    <p> Precio:      <b>$ <%Response.Write(filas.Precio); %></b></p>
+                    <asp:Button ID="Button1" runat="server" Text="Agregar" class="btn btn-default" OnClick="Button1_Click"/>
+                    
+
                 </td>
                 <td>
                     <img src="assets/images/<%Response.Write(filas.imagen); %>" alt="" width="213" height="194" />
@@ -86,11 +81,8 @@
                     <p> Descripcion: <b><%Response.Write(filas.Descripcion); %></b></p>
                     <p> Precio:      <b>$ <%Response.Write(filas.Precio); %></b></p>
                     <asp:Button ID="Button2" runat="server" Text="Agregar" class="btn btn-default" OnClick="Button2_Click"/>
-                    <asp:Label ID="Label6" runat="server" Text="Label" Visible="False"></asp:Label>
-                    <asp:Label ID="Label7" runat="server" Text="Label" Visible="False"></asp:Label>
-                    <%Label6.Text = filas.Nombre;
-                      Label7.Text = filas.Precio.ToString();
-                        %>
+                    
+
                 </td>
                 <td>
                     <img src="assets/images/<%Response.Write(filas.imagen); %>" alt="" width="213" height="194" />
@@ -129,11 +121,8 @@
                     <p> Descripcion: <b><%Response.Write(filas.Descripcion); %></b></p>
                     <p> Precio:      <b>$ <%Response.Write(filas.Precio); %></b></p>
                     <asp:Button ID="Button3" runat="server" Text="Agregar" class="btn btn-default" OnClick="Button3_Click"/>
-                    <asp:Label ID="Label8" runat="server" Text="Label" Visible="False"></asp:Label>
-                    <asp:Label ID="Label9" runat="server" Text="Label" Visible="False"></asp:Label>
-                    <%Label8.Text = filas.Nombre;
-                      Label9.Text = filas.Precio.ToString();
-                        %>
+                    
+
                 </td>
                 <td>
                     <img src="assets/images/<%Response.Write(filas.imagen); %>" alt="" width="213" height="194" />
