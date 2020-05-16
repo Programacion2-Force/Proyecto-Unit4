@@ -1,0 +1,185 @@
+CREATE TABLE USUARIOS(
+	ID int identity(1,1) primary key,
+	nombre nvarchar(50),
+	apellido nvarchar(50),
+	username nvarchar(50),
+	pass nvarchar(50),
+	email nvarchar(50)
+);
+
+GO
+
+IF EXISTS (SELECT * FROM sysobjects WHERE name = 'STP_MostrarProductos' AND user_name(uid) = 'dbo')
+	DROP PROCEDURE [dbo].STP_MostrarProductos
+GO
+
+CREATE PROCEDURE [dbo].STP_MostrarProductos
+AS
+	SET NOCOUNT ON;
+SELECT        ID, Nombre, IdTipoProducto, Precio, Descripcion, imagen
+FROM            Producto
+GO
+
+IF EXISTS (SELECT * FROM sysobjects WHERE name = 'STP_InsertarProductos' AND user_name(uid) = 'dbo')
+	DROP PROCEDURE [dbo].STP_InsertarProductos
+GO
+
+CREATE PROCEDURE [dbo].STP_InsertarProductos
+(
+	@Nombre nvarchar(50),
+	@IdTipoProducto int,
+	@Precio decimal(18, 2),
+	@Descripcion nvarchar(100),
+	@imagen nvarchar(50)
+)
+AS
+	SET NOCOUNT OFF;
+INSERT INTO [Producto] ([Nombre], [IdTipoProducto], [Precio], [Descripcion], [imagen]) VALUES (@Nombre, @IdTipoProducto, @Precio, @Descripcion, @imagen);
+	
+SELECT ID, Nombre, IdTipoProducto, Precio, Descripcion, imagen FROM Producto WHERE (ID = SCOPE_IDENTITY())
+GO
+
+IF EXISTS (SELECT * FROM sysobjects WHERE name = 'STP_ActualizarProductos' AND user_name(uid) = 'dbo')
+	DROP PROCEDURE [dbo].STP_ActualizarProductos
+GO
+
+CREATE PROCEDURE [dbo].STP_ActualizarProductos
+(
+	@Nombre nvarchar(50),
+	@IdTipoProducto int,
+	@Precio decimal(18, 2),
+	@Descripcion nvarchar(100),
+	@imagen nvarchar(50),
+	@Original_ID int,
+	@ID int
+)
+AS
+	SET NOCOUNT OFF;
+UPDATE [Producto] SET [Nombre] = @Nombre, [IdTipoProducto] = @IdTipoProducto, [Precio] = @Precio, [Descripcion] = @Descripcion, [imagen] = @imagen WHERE (([ID] = @Original_ID));
+	
+SELECT ID, Nombre, IdTipoProducto, Precio, Descripcion, imagen FROM Producto WHERE (ID = @ID)
+GO
+
+IF EXISTS (SELECT * FROM sysobjects WHERE name = 'STP_EliminarProductos' AND user_name(uid) = 'dbo')
+	DROP PROCEDURE [dbo].STP_EliminarProductos
+GO
+
+CREATE PROCEDURE [dbo].STP_EliminarProductos
+(
+	@Original_ID int
+)
+AS
+	SET NOCOUNT OFF;
+DELETE FROM [Producto] WHERE (([ID] = @Original_ID))
+GO
+--
+IF EXISTS (SELECT * FROM sysobjects WHERE name = 'STP_MostrarProductosID' AND user_name(uid) = 'dbo')
+	DROP PROCEDURE [dbo].STP_MostrarProductosID
+GO
+
+CREATE PROCEDURE [dbo].STP_MostrarProductosID
+(
+	@ID int
+)
+AS
+	SET NOCOUNT ON;
+SELECT        ID, Nombre, IdTipoProducto, Precio, Descripcion, imagen
+FROM            Producto
+WHERE        (ID = @ID)
+GO
+--
+IF EXISTS (SELECT * FROM sysobjects WHERE name = 'STP_MostrarUsuarios' AND user_name(uid) = 'dbo')
+	DROP PROCEDURE [dbo].STP_MostrarUsuarios
+GO
+
+CREATE PROCEDURE [dbo].STP_MostrarUsuarios
+AS
+	SET NOCOUNT ON;
+SELECT        ID, nombre, apellido, username, pass, email
+FROM            USUARIOS
+GO
+
+IF EXISTS (SELECT * FROM sysobjects WHERE name = 'STP_InsertarUsuarios' AND user_name(uid) = 'dbo')
+	DROP PROCEDURE [dbo].STP_InsertarUsuarios
+GO
+
+CREATE PROCEDURE [dbo].STP_InsertarUsuarios
+(
+	@nombre nvarchar(50),
+	@apellido nvarchar(50),
+	@username nvarchar(50),
+	@pass nvarchar(50),
+	@email nvarchar(50)
+)
+AS
+	SET NOCOUNT OFF;
+INSERT INTO [USUARIOS] ([nombre], [apellido], [username], [pass], [email]) VALUES (@nombre, @apellido, @username, @pass, @email);
+	
+SELECT ID, nombre, apellido, username, pass, email FROM USUARIOS WHERE (ID = SCOPE_IDENTITY())
+GO
+
+IF EXISTS (SELECT * FROM sysobjects WHERE name = 'STP_ActualizarUsuarios' AND user_name(uid) = 'dbo')
+	DROP PROCEDURE [dbo].STP_ActualizarUsuarios
+GO
+
+CREATE PROCEDURE [dbo].STP_ActualizarUsuarios
+(
+	@nombre nvarchar(50),
+	@apellido nvarchar(50),
+	@username nvarchar(50),
+	@pass nvarchar(50),
+	@email nvarchar(50),
+	@Original_ID int,
+	@ID int
+)
+AS
+	SET NOCOUNT OFF;
+UPDATE [USUARIOS] SET [nombre] = @nombre, [apellido] = @apellido, [username] = @username, [pass] = @pass, [email] = @email WHERE (([ID] = @Original_ID));
+	
+SELECT ID, nombre, apellido, username, pass, email FROM USUARIOS WHERE (ID = @ID)
+GO
+
+IF EXISTS (SELECT * FROM sysobjects WHERE name = 'STP_EliminarUsuarios' AND user_name(uid) = 'dbo')
+	DROP PROCEDURE [dbo].STP_EliminarUsuarios
+GO
+
+CREATE PROCEDURE [dbo].STP_EliminarUsuarios
+(
+	@Original_ID int
+)
+AS
+	SET NOCOUNT OFF;
+DELETE FROM [USUARIOS] WHERE (([ID] = @Original_ID))
+GO
+--
+IF EXISTS (SELECT * FROM sysobjects WHERE name = 'STP_MostrarUsuariosID' AND user_name(uid) = 'dbo')
+	DROP PROCEDURE [dbo].STP_MostrarUsuariosID
+GO
+
+CREATE PROCEDURE [dbo].STP_MostrarUsuariosID
+(
+	@ID int
+)
+AS
+	SET NOCOUNT ON;
+SELECT        ID, nombre, apellido, username, pass, email
+FROM            USUARIOS
+WHERE        (ID = @ID)
+GO
+--
+IF EXISTS (SELECT * FROM sysobjects WHERE name = 'STP_UserLogin' AND user_name(uid) = 'dbo')
+	DROP PROCEDURE [dbo].STP_UserLogin
+GO
+
+CREATE PROCEDURE [dbo].STP_UserLogin
+(
+	@UserName nvarchar(50),
+	@UserPass nvarchar(50)
+)
+AS
+	SET NOCOUNT ON;
+SELECT        ID, nombre, apellido, username, email, pass
+FROM            USUARIOS
+WHERE        (username = @UserName) AND (pass = @UserPass)
+GO
+--
