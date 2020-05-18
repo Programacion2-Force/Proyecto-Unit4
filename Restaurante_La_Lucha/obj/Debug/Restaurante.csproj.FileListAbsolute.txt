@@ -170,6 +170,8 @@ C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Restaurante_La_Lucha\bin\roslyn\
 C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Restaurante_La_Lucha\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Restaurante_La_Lucha\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Restaurante_La_Lucha\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Restaurante_La_Lucha\obj\Debug\Restaurante.csprojResolveAssemblyReference.cache
 C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Restaurante_La_Lucha\obj\Debug\Restaurante.dll
 C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Restaurante_La_Lucha\obj\Debug\Restaurante.pdb
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Restaurante_La_Lucha\obj\Debug\Restaurante.csprojAssemblyReference.cache
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Restaurante_La_Lucha\obj\Debug\Restaurante.csproj.CoreCompileInputs.cache
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Restaurante_La_Lucha\obj\Debug\Restaurante.csproj.CopyComplete
